@@ -1,0 +1,240 @@
+.app {
+   font-family: arial, sans-serif;
+   text-align: center;
+   max-width: 976px;
+   min-width: 976px;
+   margin: 0 auto;
+   height: 100%;
+   overflow: auto;
+}
+
+.app-header {
+   background-color: #adb5bd;
+   color: #fff;
+   padding: 32px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.app-header .app-logo {
+   height: 32px;
+}
+
+.app-header .app-title {
+   font-size: 24px;
+   font-weight: 500;
+   margin: 0 0 0 16px;
+}
+
+.participants {
+   background-color: #f1f1f1;
+   max-width: 912px;
+   margin: 0;
+   padding: 32px;
+}
+
+.participants h1 {
+   color: #757575;
+   font-size: 24px;
+   text-align: left;
+   margin: 34px auto;
+}
+
+.participants table tr,
+.participants table td {
+   /*margin: 0;*/
+   /*border: 0;*/
+   /*padding: 0;*/
+}
+
+.participants table input[type='text'] {
+   font-size: 16px;
+   margin: 0;
+   padding: 10px 12px;
+   border: 1px solid #eee;
+   background-color: #fafafa;
+   color: #505050;
+   font-weight: 400;
+}
+
+.participants table td:nth-child(1) input[type='text'] {
+   width: 138px;
+}
+
+.participants table td:nth-child(2) input[type='text'] {
+   width: 249px;
+}
+
+.participants table td:nth-child(3) input[type='text'] {
+   width: 168px;
+}
+
+.participants table td:nth-child(4) {
+   width: 100%;
+   text-align: right;
+}
+
+.participants table td:nth-child(4) button {
+   font-size: 16px;
+   border: 0;
+   display: inline;
+   padding: 10px 8px;
+   background-color: #ededed;
+   color: #757575;
+   font-weight: 500;
+   height: 40px;
+   cursor: pointer;
+   outline: none;
+}
+
+table.add-new-panel {
+   background-color: #fff;
+   text-align: left;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   border-spacing: 15px;
+   margin-bottom: 9px;
+}
+
+table.add-new-panel td:nth-child(4) .btn-add {
+   padding: 10px 12px;
+   background-color: #ededed;
+   color: #757575;
+   width: 110px;
+   cursor: default;
+}
+
+.add-new-panel td:nth-child(4) .btn-add.enable {
+   background-color: #07f;
+   color: #fff;
+   cursor: pointer;
+}
+
+.add-new-panel input::placeholder {
+   color: #909090;
+   font-weight: 400;
+}
+
+table.data-panel {
+   background-color: #fff;
+   text-align: left;
+   border-collapse: collapse;
+}
+
+.data-panel .no-data {
+   text-align: center;
+}
+
+.data-panel .no-data::after {
+   content: 'No data found!';
+}
+
+.data-panel tr th {
+   height: 48px;
+   font-size: 14px;
+   color: #757575;
+   line-height: 16px;
+   font-weight: 500;
+   padding: 0 0 0 24px;
+   border-bottom: 1px solid #eee;
+   cursor: pointer;
+}
+
+.data-panel tr th:first-child,
+.data-panel tr td:first-child {
+   min-width: 157px;
+}
+.data-panel tr th:nth-child(2),
+.data-panel tr td:nth-child(2) {
+   min-width: 269px;
+}
+.data-panel tr th:nth-child(3),
+.data-panel tr td:nth-child(3) {
+   min-width: 188px;
+}
+.data-panel tr th:last-child,
+.data-panel tr td:last-child {
+   width: 100%;
+   padding: 0 16px 0 24px;
+}
+
+.data-panel tr td {
+   height: 71px;
+   color: #505050;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+
+   border-bottom: 1px solid #eee;
+   padding: 0 0 0 24px;
+   margin: auto;
+}
+
+.data-panel tr:last-child {
+   border: 0;
+}
+
+.data-panel tr.selected td input {
+   margin-left: -8px;
+   margin-right: -8px;
+}
+
+.data-panel td:nth-child(4) {
+   width: 100%;
+}
+
+.data-panel td:nth-child(4) .btn-cancel {
+   font-size: 16px;
+   color: #07f;
+   margin-right: 8px;
+   width: 80px;
+}
+
+.data-panel td:nth-child(4) .btn-save {
+   font-size: 16px;
+   color: #fff;
+   background-color: #07f;
+   width: 80px;
+}
+
+.data-panel td:nth-child(4) .cmd-icons {
+   height: 24px;
+   width: 24px;
+   padding: 5px;
+   margin: 10px;
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+.data-panel td:nth-child(4) .cmd-icons.btn-edit {
+   background: #fff url(edit.svg) no-repeat center;
+   background-size: 18px;
+   margin-right: 26px;
+}
+
+.data-panel td:nth-child(4) .cmd-icons.btn-delete {
+   background: #fff url(delete.svg) no-repeat center;
+   background-size: 18px;
+}
+
+.sort.asc::after {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   margin-left: 8px;
+   content: '';
+   background: url(down.svg) no-repeat 0 0;
+   background-size: 100%;
+}
+
+.sort.desc::after {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   margin-left: 8px;
+   content: '';
+   background: url(up.svg) no-repeat 0 0;
+   background-size: 100%;
+}
